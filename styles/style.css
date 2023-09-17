@@ -1,1 +1,344 @@
-/* место для вашего кода */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* шапка 
+============*/
+
+.header {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  margin: 0 12px 0 50px;
+  padding: 92px 0;
+}
+
+.header__menu {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+}
+
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.header__list-item {
+  list-style: circle;
+}
+
+.header__link:hover {
+  color: #ba55d3;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.header__logo {
+  padding-left: 45px;
+}
+
+.header__logo-image {
+  max-width: 148px;
+  max-height: 105px;
+}
+
+.address {
+  font-size: 18px;
+  font-style: 400;
+  display: flex;
+  flex-direction: column;
+  line-height: 135%;
+}
+
+.address:hover {
+  color: #ba55d3;
+}
+
+.header__address {
+  padding-top: 5px;
+}
+
+/* блок - оно тебе надо 
+========================*/
+
+.cover {
+  display: flex;
+  background-image: url(/images/cover.jpg);
+  background-size: 100%;
+  flex: 1 1 auto;
+}
+
+.overlay {
+  max-width: 1440px;
+  max-height: 757px;
+  background-color: rgba(28, 28, 28, 0.7);
+}
+
+.cover__title {
+  padding: 165px 0 0 50px;
+}
+
+.aligned-text {
+  display: block;
+  width: 100%;
+  font-size: 100px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  line-height: 115%;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.aligned-text_center {
+  padding: 15px 50px 0 0;
+  text-align: center;
+}
+
+.aligned-text_right {
+  padding-right: 20px;
+  text-align: right;
+}
+
+.cover__description {
+  display: flex;
+  padding: 133px 52px 60px 0;
+  justify-content: flex-end;
+}
+
+.cover__description-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 22px;
+  word-spacing: 1.15rem;
+  min-height: 28px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-right: 81px;
+}
+
+.bet-button {
+  display: flex;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px #fff solid;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  max-width: 257px;
+  max-height: 52px;
+}
+
+.bet-button:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #ba55d3;
+  box-shadow: inset 0 0 0 3px #ba55d3;
+  transition: all 0.3s ease;
+}
+
+/* блок - лоты 
+===============*/
+
+.lots {
+  min-height: 579px;
+  padding: 0 50px;
+}
+
+.lots__heading {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  padding: 180px 0 27px 40px;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.lots__card-list {
+  display: flex;
+  list-style-type: none;
+  gap: 25px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  flex: 1 1 auto;
+}
+
+.lots__card-list-item {
+  min-height: 480px;
+  min-width: 430px;
+  padding-bottom: 30px;
+  color: #fff;
+  width: 32%;
+  flex-grow: 1;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 28, 28, 0.7);
+}
+
+.card_type_film {
+  height: 100%;
+  background-image: url(/images/card-lot-01.jpg);
+  background-size: 100%;
+}
+
+.card__title {
+  font-size: 22px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 50px 40px 30px;
+}
+
+.card__text {
+  font-size: 20px;
+  line-height: 120%;
+  padding: 0 40px 50px;
+}
+
+.card_type_book {
+  height: 100%;
+  background-image: url(/images/card-lot-02.jpg);
+  background-size: 100%;
+}
+
+.card_type_picture {
+  height: 100%;
+  background-image: url(/images/card-lot-03.jpg);
+  background-size: 100%;
+}
+
+.lots__look-more-link {
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  padding: 30px 0 0 40px;
+}
+
+.lots__look-more-link:hover {
+  color: #ba55d3;
+}
+
+/* блок - об аукционе 
+=======================*/
+
+.about {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about__column {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 182px 0 0 145px;
+}
+
+.about__logo {
+  display: flex;
+  width: 240px;
+  height: 240px;
+  background: #000;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+  align-items: center;
+}
+
+.about__text-conteiner {
+  padding: 5px 0 0 120px;
+  flex: 1 1 auto;
+  width: 50%;
+}
+
+.about__title {
+  display: flex;
+  height: 240px;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.about__text {
+  display: flex;
+  font-size: 20px;
+  padding: 0 50px 28px 0;
+}
+
+.about__text-second {
+  font-size: 20px;
+  padding-right: 50px;
+}
+
+/* подвал 
+============*/
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 50px 90px 50px;
+  max-height: 97px;
+  padding: 185px 0 90px 0;
+}
+
+.footer__menu {
+  font-size: 18px;
+}
+
+.footer__menu-list {
+  list-style-type: none;
+}
+
+.footer__menu-list-item {
+  text-align: center;
+}
+
+.footer__menu-link:hover {
+  color: #ba55d3;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  max-width: 240px;
+  list-style-type: none;
+  margin-left: auto;
+  gap: 48px;
+}
+
+.footer__social-list-item {
+  list-style: none;
+  display: flex;
+}
+
+.footer__social-icon {
+  max-height: 48px;
+}
