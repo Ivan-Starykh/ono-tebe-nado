@@ -1,7 +1,6 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  height: 100%;
   overflow: hidden;
   max-width: 1440px;
   margin: 0 auto;
@@ -34,7 +33,8 @@
 }
 
 .header__link:hover {
-  color: #ba55d3;
+  text-decoration: none;
+  border-bottom: 1px solid;
 }
 
 .header__links-list-item_no-bullit {
@@ -56,10 +56,15 @@
   display: flex;
   flex-direction: column;
   line-height: 135%;
+  max-width: 240px;
 }
 
-.address:hover {
-  color: #ba55d3;
+.header__address {
+  font-size: 18px;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  line-height: 135%;
 }
 
 .header__address {
@@ -71,17 +76,18 @@
 
 .cover {
   display: flex;
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
   background-image: url(../images/cover.jpg);
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
   flex: 1 1 auto;
 }
 
 .cover__overlay {
   width: 100%;
   max-height: 757px;
-  background-color: rgba(28, 28, 28, 0.7);
+  background-color: rgba(28, 28, 28, 0.6);
 }
 
 .cover__title {
@@ -126,7 +132,6 @@
   align-items: center;
   font-size: 22px;
   word-spacing: 1.15rem;
-  min-height: 28px;
   color: #fff;
   text-transform: uppercase;
   padding-right: 79px;
@@ -157,7 +162,6 @@
 ===============*/
 
 .lots {
-  min-height: 579px;
   padding: 0 50px;
 }
 
@@ -200,6 +204,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-position: center;
 }
 
 .card_type_film {
@@ -242,7 +247,8 @@
 }
 
 .lots__look-more-link:hover {
-  color: #ba55d3;
+  text-decoration: none;
+  border-bottom: 1px solid;
 }
 
 /* блок - об аукционе 
@@ -279,21 +285,20 @@
   padding: 5px 0 0 120px;
   flex: 1 1 auto;
   width: 50%;
+  flex-direction: row;
 }
 
 .about__title {
-  display: flex;
-  height: 240px;
-  align-items: center;
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 700;
+  padding: 96.5px 0 100px 0;
 }
 
 .about__text {
-  display: flex;
+  /* display: flex; */
   font-size: 20px;
-  padding: 0 50px 28px 0;
+  padding: 0 50px 26px 0;
 }
 
 .about__text-second {
@@ -308,8 +313,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 50px 90px 50px;
-  max-height: 97px;
-  padding: 185px 0 90px 0;
+  padding: 183px 0 90px 0;
 }
 
 .footer__menu {
@@ -325,7 +329,8 @@
 }
 
 .footer__menu-link:hover {
-  color: #ba55d3;
+  text-decoration: none;
+  border-bottom: 1px solid;
 }
 
 .footer__menu-link_active {
